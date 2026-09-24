@@ -18,6 +18,17 @@
     font-weight: bold;
 }
 
+/* Character name hover effect */
+.name:hover {
+    border: 3px solid #00bcd4;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 188, 212, 0.7);
+    cursor: pointer;
+}
+
+
+
 /* Character styles */
 .lyngstrand {
     color: #1f4e79;
