@@ -27,8 +27,6 @@
     cursor: pointer;
 }
 
-
-
 /* Character styles */
 .lyngstrand {
     color: #1f4e79;
@@ -52,42 +50,41 @@ q {
     font-style: italic;
     font-size: 16px;
 }
+
 /* Adjusted Table Styles */
 .actor-table {
     width: 80%;
-    margin: 40px auto; 
-    border-collapse: separate; /* Changed from collapse to help stubborn browsers render borders */
-    border-spacing: 0; /* Keeps the cells tight together like a collapsed border */
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    border: 2px solid #1f4e79; /* Strong, clear outer border */
-    border-radius: 6px; /* Slightly rounded corners for a clean look */
-    overflow: hidden; /* Keeps corners clean */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #1f4e79;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific cell border rules to prevent missing lines */
-.actor-table th, 
+/* Specific cell border rules */
+.actor-table th,
 .actor-table td {
-    padding: 12px 15px; 
-    text-align: left; 
-    border-bottom: 1px solid #dddddd; /* Visible bottom border for every row */
-    border-right: 1px solid #dddddd; /* Visible vertical divider lines */
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
 }
 
-/* Remove the outer right border from the last column so it doesn't double up */
-.actor-table th:last-child, 
+.actor-table th:last-child,
 .actor-table td:last-child {
     border-right: none;
 }
 
-/* Remove the bottom border from the final row */
 .actor-table tbody tr:last-child td {
     border-bottom: none;
 }
 
 .actor-table th {
-    background-color: #1f4e79; 
+    background-color: #1f4e79;
     color: white;
     font-weight: bold;
     border-bottom: 2px solid #1f4e79;
@@ -95,7 +92,7 @@ q {
 
 /* Row Stripes */
 .actor-table tbody tr:nth-child(even) {
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
 }
 
 /* Hover Effect */
@@ -103,40 +100,25 @@ q {
     background-color: #f1f3f5;
 }
 
-/* Relevant Ibsen image */
+/* Bonus image */
 .ibsen-image {
-    display: block;
     width: 200px;
-    height: auto;
-    margin: 20px auto;
-    border: 4px solid #1f4e79;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Bottom navigation */
+/* Bonus navigation */
 .bottom-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     background-color: #1f4e79;
-    padding: 15px;
-    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .bottom-nav a {
     color: white;
     text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 6px;
+    margin: 15px;
 }
 
 .bottom-nav a:hover {
-    background-color: #7030a0;
-}
-
-.bottom-nav i {
-    margin-right: 6px;
+    color: yellow;
 }
